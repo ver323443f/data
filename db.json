@@ -1,104 +1,345 @@
 {
-"tours": [
-  {
-    "tour_id": 1,
-"destination": "Paris",
-"start_date": "2023-06-15",
-"end_date": "2023-06-22",
-"flights": {
-"departure_flight": {
-"airline": "Air France",
-"flight_number": "AF123",
-"departure_time": "2023-06-15T08:00:00",
-"arrival_time": "2023-06-15T11:30:00"
-},
-"return_flight": {
-"airline": "Air France",
-"flight_number": "AF124",
-"departure_time": "2023-06-22T15:00:00",
-"arrival_time": "2023-06-22T18:30:00"
-}
-},
-"hotel": {
-"name": "Hotel Eiffel",
-"address": "123 Rue de la Tour Eiffel, Paris",
-"check_in": "2023-06-15",
-"check_out": "2023-06-22"
-}
-},
-{
-"tour_id": 2,
-"destination": "Rome",
-"start_date": "2023-07-10",
-"end_date": "2023-07-17",
-"flights": {
-"departure_flight": {
-"airline": "Alitalia",
-"flight_number": "AZ456",
-"departure_time": "2023-07-10T09:30:00",
-"arrival_time": "2023-07-10T12:30:00"
-},
-"return_flight": {
-"airline": "Alitalia",
-"flight_number": "AZ457",
-"departure_time": "2023-07-17T14:00:00",
-"arrival_time": "2023-07-17T17:00:00"
-}
-},
-"hotel": {
-"name": "Hotel Colosseum",
-"address": "Via dei Fori Imperiali, 100, Rome",
-"check_in": "2023-07-10",
-"check_out": "2023-07-17"
-}
-},
-  {
-    "tour_name": "Париж и Ницца",
-    "duration": "7 дней",
-    "flights": {
-      "departure_city": "Москва",
-      "arrival_city": "Париж",
-      "departure_date": "2022-04-15",
-      "arrival_date": "2022-04-15"
-    },
-    "hotels": [
-      {
-        "hotel_name": "Hotel Eiffel",
-        "location": "Париж",
-        "check_in_date": "2022-04-15",
-        "check_out_date": "2022-04-20"
+  "tours": [
+    {
+      "tour_id": 1,
+      "countryName": "Thailand",
+      "cityName": "Irkutsk",
+      "start_date": "2023-06-01",
+      "count_nights": "7",
+      "count_adults": "2",
+      "count_child": "1",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
       },
-      {
-        "hotel_name": "Hotel Riviera",
-"location": "Ницца",
-"check_in_date": "2022-04-20",
-"check_out_date": "2022-04-22"
-}
-]
-},
-{
-"tour_name": "Рим и Флоренция",
-"duration": "10 дней",
-"flights": {
-"departure_city": "Милан",
-"arrival_city": "Рим",
-"departure_date": "2022-05-10",
-"arrival_date": "2022-05-10"
-},
-"hotels": [
-{
-"hotel_name": "Hotel Roma",
-"location": "Рим",
-"check_in_date": "2022-05-10",
-"check_out_date": "2022-05-15"
-},
-{
-"hotel_name": "Hotel Firenze",
-"location": "Флоренция",
-"check_in_date": "2022-05-15",
-"check_out_date": "2022-05-20"
-}
-]
-}
-]
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 2,
+      "countryName": "Thailand",
+      "cityName": "Moscow",
+      "start_date": "2023-06-01",
+      "count_nights": "10",
+      "count_adults": "2",
+      "count_child": "0",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 3,
+      "countryName": "Thailand",
+      "cityName": "Irkutsk",
+      "start_date": "2023-06-01",
+      "count_nights": "7",
+      "count_adults": "1",
+      "count_child": "0",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 4,
+      "countryName": "Thailand",
+      "cityName": "Irkutsk",
+      "start_date": "2023-06-01",
+      "count_nights": "7",
+      "count_adults": "2",
+      "count_child": "0",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 5,
+      "countryName": "Egypt",
+      "cityName": "Irkutsk",
+      "start_date": "2023-06-01",
+      "count_nights": "9",
+      "count_adults": "2",
+      "count_child": "0",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 6,
+      "countryName": "Egypt",
+      "cityName": "Irkutsk",
+      "start_date": "2023-06-01",
+      "count_nights": "7",
+      "count_adults": "1",
+      "count_child": "0",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 7,
+      "countryName": "Thailand",
+      "cityName": "Moscow",
+      "start_date": "2023-06-01",
+      "count_nights": "12",
+      "count_adults": "2",
+      "count_child": "0",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 8,
+      "countryName": "Thailand",
+      "cityName": "Moscow",
+      "start_date": "2023-06-01",
+      "count_nights": "10",
+      "count_adults": "2",
+      "count_child": "1",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 9,
+      "countryName": "Egypt",
+      "cityName": "Moscow",
+      "start_date": "2023-06-01",
+      "count_nights": "7",
+      "count_adults": "2",
+      "count_child": "1",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 10,
+      "countryName": "Thailand",
+      "cityName": "Moscow",
+      "start_date": "2023-06-03",
+      "count_nights": "8",
+      "count_adults": "2",
+      "count_child": "1",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    },
+    {
+      "tour_id": 1,
+      "countryName": "Thailand",
+      "cityName": "Irkutsk",
+      "start_date": "2023-06-15",
+      "count_nights": "7",
+      "count_adults": "2",
+      "count_child": "1",
+      "hotel": {
+        "name": "Hotel Eiffel",
+        "address": "123 Rue de la Tour Eiffel, Paris",
+        "count_stars": "4",
+        "name_pansion": "Питание - только завтраки",
+        "check_in": "2023-06-15",
+        "check_out": "2023-06-22"
+      },
+      "flights": {
+        "departure_flight": {
+          "airline": "Air France",
+          "flight_number": "AF123",
+          "departure_time": "2023-06-15T08:00:00",
+          "arrival_time": "2023-06-15T11:30:00"
+        },
+        "return_flight": {
+          "airline": "Air France",
+          "flight_number": "AF124",
+          "departure_time": "2023-06-22T15:00:00",
+          "arrival_time": "2023-06-22T18:30:00"
+        }
+      }
+    }
+  ]
 }
